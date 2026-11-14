@@ -1,0 +1,7 @@
+-r base.txt                          # include everything from base.txt
+
+pytest>=8.3                          # test runner
+pytest-django>=4.9                   # pytest <-> Django integration
+factory-boy>=3.3                     # build test data quickly
+coverage>=7.6                        # how much code the tests execute
+ruff>=0.8                            # linter + formatter (replaces flake8/black/isort)

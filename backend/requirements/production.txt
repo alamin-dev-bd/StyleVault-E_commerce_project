@@ -1,0 +1,4 @@
+-r base.txt
+
+gunicorn>=23.0                       # production WSGI server (Linux only - that is fine, Render runs Linux)
+whitenoise>=6.9                      # serves Django admin CSS/JS (static files) without nginx
