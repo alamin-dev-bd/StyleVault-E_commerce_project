@@ -26,7 +26,7 @@ api_v1_patterns = [
     path("schema/", SpectacularAPIView.as_view(), name="schema"),  # raw OpenAPI file
     path("docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
     # path("auth/", include("apps.accounts.urls")),        # Phase 2
-    # path("", include("apps.catalog.urls")),              # Phase 1: /products/ /brands/ /categories/
+    path("", include("apps.catalog.urls")),              # Phase 1: /products/ /brands/ /categories/
     # path("cart/", include("apps.cart.urls")),            # Phase 3
     # path("wishlist/", include("apps.wishlist.urls")),    # Phase 3
     # path("coupons/", include("apps.promotions.urls")),   # Phase 3

@@ -11,7 +11,7 @@ class UserAdmin(DjangoUserAdmin):
     add_form = CustomUserCreationForm
     model = User
 
-    ordering = ("email",)  # default admin sorts by "username", which does not exist
+    ordering = ("email",) 
     list_display = ("email", "full_name", "is_staff", "is_active", "is_email_verified", "date_joined")
     list_filter = ("is_staff", "is_superuser", "is_active", "is_email_verified")
     search_fields = ("email", "full_name", "phone")

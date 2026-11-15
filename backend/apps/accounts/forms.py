@@ -4,7 +4,6 @@ from .models import User
 
 
 class CustomUserCreationForm(UserCreationForm):
-    """Django's default form expects a `username` field; ours uses email."""
 
     class Meta:
         model = User

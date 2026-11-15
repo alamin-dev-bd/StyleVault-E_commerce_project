@@ -12,26 +12,24 @@ class User(AbstractBaseUser, PermissionsMixin):
     PermissionsMixin gives us: is_superuser, groups, user_permissions.
     """
 
-    email = models.EmailField("email address", max_length=255, unique=True)  # unique => no duplicates
+    email = models.EmailField("email address", max_length=255, unique=True) 
     full_name = models.CharField(max_length=150, blank=True)
     phone = models.CharField(max_length=20, blank=True)
-
-    is_active = models.BooleanField(default=True)  # False = account disabled
-    is_staff = models.BooleanField(default=False)  # True = may enter Django Admin / admin API
+    is_active = models.BooleanField(default=True)  
+    is_staff = models.BooleanField(default=False) 
     is_email_verified = models.BooleanField(default=False)
     date_joined = models.DateTimeField(default=timezone.now)
 
     objects = UserManager()
 
-    USERNAME_FIELD = "email"  # the field used to log in
-    REQUIRED_FIELDS = []  # extra fields `createsuperuser` asks for (email + password are automatic)
+    USERNAME_FIELD = "email" 
+    REQUIRED_FIELDS = [] 
 
     class Meta:
         verbose_name = "user"
         verbose_name_plural = "users"
 
     def save(self, *args, **kwargs):
-        # Second safety net: even if someone saves a user directly, store a lowercase email.
         self.email = self.email.lower()
         super().save(*args, **kwargs)
 
