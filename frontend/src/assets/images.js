@@ -1,8 +1,9 @@
 //Hero
-import HeroImg from "@/assets/Images/Heroimg.WebP"
+import HeroImg from "@/assets/Images/Heroimgp.WebP"
 import gray from "@/assets/Images/gray.WebP"
 import brown from "@/assets/Images/brown.WebP"
 import green from "@/assets/Images/green.WebP"
+import hanger from "@/assets/Images/hanger.WebP"
 
 //Logo Navbar
 import logoSvg from "@/assets/Images/logo.svg"
@@ -21,6 +22,8 @@ export const images = {
     gray,
     brown,
     green, 
+    hanger
+
 }
 
 //Logo Navbar

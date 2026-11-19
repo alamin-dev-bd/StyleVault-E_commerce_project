@@ -43,7 +43,7 @@ export default function Category() {
   };
 
   return (
-    <nav className="hidden border-t border-(--borderp) md:block">
+    <nav className="hidden border-t border-(--borderp) bg-(--primaryp) md:block" >
       <div className="mx-auto flex max-w-360 items-center justify-center gap-5 px-5 lg:gap-8">
         {categories.map((category) => {
           const hasMegaMenu = Boolean(megaMenu[category]);

@@ -13,7 +13,6 @@ import {
 } from "lucide-react";
 
 import SearchBar from "./SearchBar";
-import Category from "./Category";
 import MobileMenu from "./MobileMenu";
 
 export default function Navbar() {
@@ -41,22 +40,22 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-50 w-full text-(--text) shadow-sm">
+    <header className="relative z-50 text-(--text) shadow-sm">
       <div className="mx-auto grid max-w-360 grid-cols-3 items-center px-5 py-2 lg:px-10">
 
-        {/* Left: Hamburger */}
+        {/* Left: Hamburger - visible on all screens */}
         <div className="flex items-center justify-start">
           <button
             type="button"
             onClick={toggleMobileMenu}
             aria-label={mobileOpen ? "Close menu" : "Open menu"}
             aria-expanded={mobileOpen}
-            className="transition text-(--text-white) hover:text-(--accent) cursor-pointer"
+            className="cursor-pointer text-(--text-white) transition hover:text-(--accent)"
           >
             {mobileOpen ? (
-              <X size={24} strokeWidth={1.7} />
+              <X size={25} strokeWidth={1.7} />
             ) : (
-              <TextAlignStart size={24} strokeWidth={1.7} />
+              <TextAlignStart size={25} strokeWidth={1.7} />
             )}
           </button>
         </div>
@@ -65,8 +64,8 @@ export default function Navbar() {
         <Link to="/" className="justify-self-center">
           <img
             src={logo.logoSvg}
-            alt="StayleVault"
-            className="h-12 sm:h-16 w-auto object-contain"
+            alt="StyleVault"
+            className="h-12 w-auto object-contain sm:h-16"
           />
         </Link>
 
@@ -77,7 +76,7 @@ export default function Navbar() {
             onClick={toggleSearch}
             aria-label={searchOpen ? "Close search" : "Open search"}
             aria-expanded={searchOpen}
-            className="transition text-(--text-white) hover:text-(--accent) cursor-pointer"
+            className="cursor-pointer text-(--text-white) transition hover:text-(--accent)"
           >
             {searchOpen ? (
               <X size={21} strokeWidth={1.7} />
@@ -86,51 +85,51 @@ export default function Navbar() {
             )}
           </button>
 
-          <a
-            href="/wishlist"
+          <Link
+            to="/wishlist"
             aria-label="Wishlist"
-            className="hidden transition text-(--text-white) hover:text-(--accent) sm:block"
+            className="hidden text-(--text-white) transition hover:text-(--accent) sm:block"
           >
             <Heart size={21} strokeWidth={1.7} />
-          </a>
+          </Link>
 
-          <a
-            href="/notifications"
+          <Link
+            to="/notifications"
             aria-label="Notifications"
-            className="hidden transition text-(--text-white) hover:text-(--accent) sm:block"
+            className="hidden text-(--text-white) transition hover:text-(--accent) sm:block"
           >
             <Bell size={20} strokeWidth={1.7} />
-          </a>
+          </Link>
 
-          <a
-            href="/cart"
+          <Link
+            to="/cart"
             aria-label="Shopping bag"
-            className="relative transition text-(--text-white) hover:text-(--accent)"
+            className="relative text-(--text-white) transition hover:text-(--accent)"
           >
             <ShoppingBag size={21} strokeWidth={1.7} />
             <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-(--accent) text-[10px] text-black">
               0
             </span>
-          </a>
+          </Link>
 
-          <a
-            href="/login"
+          <Link
+            to="/login"
             aria-label="Account"
-            className="hidden transition text-(--text-white) hover:text-(--accent) sm:block"
+            className="hidden text-(--text-white) transition hover:text-(--accent) sm:block"
           >
             <UserRound size={21} strokeWidth={1.7} />
-          </a>
+          </Link>
         </div>
       </div>
 
+      {/* Search */}
       <SearchBar
         isOpen={searchOpen}
         onClose={() => setSearchOpen(false)}
         onSearch={handleSearch}
       />
 
-      <Category />
-
+      {/* Left Sidebar Drawer */}
       <MobileMenu
         mobileOpen={mobileOpen}
         onClose={closeMobileMenu}

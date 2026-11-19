@@ -19,6 +19,9 @@
   --accent-h: #E5A500;
   --accent-soft: rgba(255, 185, 0, 0.15);
 
+  /* Hover text */
+  --hover-text: #894B00;
+
   /* Backgrounds */
   --bg: #F7F3ED;
   --surface: #FFFFFF;
@@ -33,7 +36,6 @@
   --border: #E5DDD3;
 
   /* Header */
-
   --header: #261D17;
 
   /* Links */
@@ -58,6 +60,9 @@
   --accent-h: #E5A500;
   --accent-soft: rgba(255, 191, 36, 0.12);
 
+  /* Hover text */
+  --hover-text: #FFBF24;
+
   /* Backgrounds */
   --bg: #151311;
   --surface: #211D19;
@@ -72,7 +77,6 @@
   --border: #3B332D;
 
   /* Header */
-  
   --header: #1B1511;
 
   /* Links */
@@ -81,6 +85,7 @@
 
 /* constent color */
 :root {
+
   /* Fixed brand colors */
   --brand-gold: #FFB900;
   --brand-gold-hover: #E5A500;
@@ -106,6 +111,7 @@
   --topbar: #111111;
 
   --borderp: #3B332D;
+
 }
 
 
@@ -155,7 +161,9 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: var(--font-heading);
   font-weight: var(--weight-bold);
 }
@@ -188,4 +196,3 @@ h1, h2, h3 {
     animation: none;
   }
 }
-
