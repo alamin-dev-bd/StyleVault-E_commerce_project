@@ -1,15 +1,23 @@
-import { createBrowserRouter } from 'react-router-dom'
 
-import HomePage from '@/pages/shop/HomePage'
-import NotFoundPage from '@/pages/NotFoundPage'
-import Login from '@/pages/auth/Login'
-import Signup from '@/pages/auth/Signup'
+import { createBrowserRouter } from "react-router-dom";
 
-// Add routes here as pages are built. Later this becomes nested routes with layouts:
-//   { element: <MainLayout />, children: [ { path: '/', element: <HomePage /> }, ... ] }
+import MainLayout from "@/components/layout/MainLayout";
+
+import HomePage from "@/pages/shop/HomePage";
+import NotFoundPage from "@/pages/NotFoundPage";
+
+import Login from "@/pages/auth/Login";
+import Signup from "@/pages/auth/Signup";
+
 export const router = createBrowserRouter([
-  { path: '/', element: <HomePage /> },
-  { path: '*', element: <NotFoundPage /> },
-  { path:'/login', element: <Login  />} ,
-  { path:'/signup', element: <Signup  />} 
-])
+  {
+    element: <MainLayout />,children: [
+      { path: "/",element: <HomePage />, },
+      { path: "*",element: <NotFoundPage />, },
+    ],
+  },
+
+  // Authentication pages (without the main header/footer)
+  { path: "/login",element: <Login />, },
+  { path: "/signup",element: <Signup />, },
+]);

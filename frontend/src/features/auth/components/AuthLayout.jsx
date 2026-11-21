@@ -1,7 +1,7 @@
 
 import { Link } from "react-router-dom";
 import { X } from "lucide-react";
-import { logo } from "@/assets/images";
+import { logo } from "@/assets/Images/image";
 
 export default function AuthLayout({
   children,

@@ -1,6 +1,6 @@
 
-import DesktopHero from "@/components/layout/Hero/DesktopHero";
-import MobileHero from "@/components/layout/Hero/MobileHero";
+import DesktopHero from "@/features/catalog/components/Hero/DesktopHero";
+import MobileHero from "@/features/catalog/components/Hero/MobileHero";
 
 export default function Hero() {
   return (

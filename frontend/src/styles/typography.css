@@ -1,0 +1,41 @@
+
+/* ---------- FONT VARIABLES ---------- */
+
+:root {
+  /* Font families */
+  --font-heading: "Bricolage Grotesque", sans-serif;
+  --font-body: "Bricolage Grotesque", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+
+  /* Font weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-heavy: 800;
+}
+
+
+/* ---------- GLOBAL BODY ---------- */
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+
+  background-color: var(--bg);
+  color: var(--text);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-bold);
+}

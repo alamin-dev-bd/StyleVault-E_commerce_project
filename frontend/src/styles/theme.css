@@ -1,0 +1,143 @@
+
+
+/* ---------- LIGHT THEME ---------- */
+
+:root,
+[data-mode="light"] {
+  color-scheme: light;
+
+  /* Brand */
+  --primary: #2B211B;
+  --primary-h: #894B00;
+  --primary-soft: rgba(43, 33, 27, 0.08);
+
+  /* Accent */
+  --accent: #FFB900;
+  --accent-h: #E5A500;
+  --accent-soft: rgba(255, 185, 0, 0.15);
+
+  /* Hover text */
+  --hover-text: #894B00;
+
+  /* Backgrounds */
+  --bg: #F7F3ED;
+  --surface: #FFFFFF;
+  --surface-2: #EEE8DF;
+
+  /* Text */
+  --text: #211A16;
+  --text-2: #51463E;
+  --muted: #857B72;
+
+  /* Borders */
+  --border: #E5DDD3;
+
+  /* Header */
+  --header: #261D17;
+
+  /* Links */
+  --link: #007AFF;
+}
+
+
+/* ---------- DARK THEME ---------- */
+
+[data-mode="dark"] {
+  color-scheme: dark;
+
+  /* Brand */
+  --primary: #17120F;
+  --primary-h: #30231B;
+  --primary-soft: rgba(255, 185, 0, 0.10);
+
+  /* Accent */
+  --accent: #FFBF24;
+  --accent-h: #E5A500;
+  --accent-soft: rgba(255, 191, 36, 0.12);
+
+  /* Hover text */
+  --hover-text: #FFBF24;
+
+  /* Backgrounds */
+  --bg: #151311;
+  --surface: #211D19;
+  --surface-2: #2C2621;
+
+  /* Text */
+  --text: #F7F3ED;
+  --text-2: #D5C9BD;
+  --muted: #A69A8E;
+
+  /* Borders */
+  --border: #3B332D;
+
+  /* Header */
+  --header: #1B1511;
+
+  /* Links */
+  --link: #60A5FA;
+}
+
+
+/* =================================
+   FIXED BRAND COLORS
+   These don't change with theme mode
+================================= */
+
+:root {
+
+  /* Brand */
+  --brand-gold: #FFB900;
+  --brand-gold-hover: #E5A500;
+  --brand-dark: #2B211B;
+
+  --primaryp: #17120F;
+  --primaryp-soft: rgba(255, 185, 0, 0.10);
+
+  /* Text */
+  --text-white: #FFFFFF;
+  --text-black: #000000;
+  --textp-2: #D5C9BD;
+
+  /* Backgrounds */
+  --bg-black: #000000;
+  --bg-white: #FFFFFF;
+  --bg-black2: #211D19;
+  --bg2: #151311;
+
+  /* Overlays */
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --overlay-light: rgba(255, 255, 255, 0.1);
+
+  /* Header */
+  --topbar: #111111;
+
+  /* Borders */
+  --borderp: #3B332D;
+}
+
+
+/* =================================
+   THEME-BASED LOGO SWITCHING
+================================= */
+
+/* Light mode */
+
+[data-mode="light"] .logo-light {
+  display: block;
+}
+
+[data-mode="light"] .logo-dark {
+  display: none;
+}
+
+
+/* Dark mode */
+
+[data-mode="dark"] .logo-light {
+  display: none;
+}
+
+[data-mode="dark"] .logo-dark {
+  display: block;
+}

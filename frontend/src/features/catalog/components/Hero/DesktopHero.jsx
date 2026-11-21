@@ -6,7 +6,7 @@ import {
     ShieldCheck,
     Headphones,
 } from "lucide-react";
-import { images } from "@/assets/images";
+import { HeroImages } from "@/assets/Images/image";
 
 export default function DesktopHero() {
     const [activeProduct, setActiveProduct] = useState(null);
@@ -21,8 +21,8 @@ export default function DesktopHero() {
             id: "green",
             name: "Olive Sweatshirt",
             price: 1350,
-            img: images.green,
-            previewImg: images.greenPreview || images.green,
+            img: HeroImages.green,
+            previewImg: HeroImages.greenPreview || HeroImages.green,
             link: "/products/olive-premium-sweatshirt",
             position: "left-[5%]",
             width: "w-[35%]",
@@ -32,8 +32,8 @@ export default function DesktopHero() {
             id: "grey",
             name: "Grey Sweatshirt",
             price: 1350,
-            img: images.gray,
-            previewImg: images.grayPreview || images.gray,
+            img: HeroImages.gray,
+            previewImg: HeroImages.grayPreview || HeroImages.gray,
             link: "/products/grey-essential-sweatshirt",
             position: "left-[59%]",
             width: "w-[37%]",
@@ -43,8 +43,8 @@ export default function DesktopHero() {
             id: "beige",
             name: "Beige Sweatshirt",
             price: 1350,
-            img: images.brown,
-            previewImg: images.brownPreview || images.brown,
+            img: HeroImages.brown,
+            previewImg: HeroImages.brownPreview || HeroImages.brown,
             link: "/products/beige-classic-sweatshirt",
             position: "left-[29%]",
             width: "w-[45%]",
@@ -103,7 +103,7 @@ export default function DesktopHero() {
                 <div
                     className="absolute inset-0 z-[-2] bg-cover bg-center bg-no-repeat"
                     style={{
-                        backgroundImage: `url(${images.HeroImg})`,
+                        backgroundImage: `url(${HeroImages.HeroImg})`,
                     }}
                 />
 
@@ -136,7 +136,7 @@ export default function DesktopHero() {
 
                     <div className="pointer-events-none absolute left-[3%] top-0 z-30 w-[94%]">
                         <img
-                            src={images.hanger}
+                            src={HeroImages.hanger}
                             alt=""
                             draggable="false"
                             className="block h-auto w-full object-contain"

@@ -1,16 +1,14 @@
 
-import Hero from "@/features/catalog/components/Hero";
-import CategorySection from "@/features/catalog/components/CategoryCards";
-import Headers from "@/components/layout/Header/Headers";
+import Hero from "@/features/catalog/components/Hero/Hero";
+import CategorySection from "@/features/catalog/components/CategorySection/CategorySection";
 
 export default function HomePage() {
   return (
-    <>
-    <main >
-      <Headers />
+
+    <main>
       <Hero />
       <CategorySection />
     </main>
-    </>
-  )
+
+  );
 }

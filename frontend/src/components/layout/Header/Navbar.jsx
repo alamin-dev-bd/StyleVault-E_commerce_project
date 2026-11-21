@@ -1,7 +1,7 @@
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { logo } from "@/assets/images";
+import { Link, useNavigate } from "react-router-dom";
+import { logo } from "@/assets/Images/image";
 import {
   Search,
   UserRound,
@@ -18,13 +18,14 @@ import MobileMenu from "./MobileMenu";
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const navigate = useNavigate();
 
   const handleSearch = (query) => {
     setSearchOpen(false);
     setMobileOpen(false);
-    window.location.href = `/shop?search=${encodeURIComponent(query)}`;
-  };
 
+    navigate(`/shop?search=${encodeURIComponent(query)}`);
+  };
   const toggleSearch = () => {
     setSearchOpen((previous) => !previous);
     setMobileOpen(false);
