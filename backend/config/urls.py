@@ -25,8 +25,8 @@ api_v1_patterns = [
     path("", include("apps.common.urls")),  # /api/v1/health/
     path("schema/", SpectacularAPIView.as_view(), name="schema"),  # raw OpenAPI file
     path("docs/", SpectacularSwaggerView.as_view(url_name="schema"), name="swagger-ui"),
-    # path("auth/", include("apps.accounts.urls")),        # Phase 2
-    path("", include("apps.catalog.urls")),              # Phase 1: /products/ /brands/ /categories/
+    path("auth/", include("apps.accounts.urls")),       
+    path("", include("apps.catalog.urls")),              # Phase 2: /products/ /brands/ /categories/
     # path("cart/", include("apps.cart.urls")),            # Phase 3
     # path("wishlist/", include("apps.wishlist.urls")),    # Phase 3
     # path("coupons/", include("apps.promotions.urls")),   # Phase 3
@@ -40,6 +40,7 @@ api_v1_patterns = [
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/v1/", include(api_v1_patterns)),
+    
 ]
 
 if settings.DEBUG:

@@ -43,6 +43,7 @@ FRONTEND_URL = env(
     "FRONTEND_URL",
     default="http://localhost:5173",
 )
+DEFAULT_FROM_EMAIL = "noreply@stylevault.com"
 
 BACKEND_URL = env(
     "BACKEND_URL",
