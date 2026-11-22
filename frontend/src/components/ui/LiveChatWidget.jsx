@@ -35,7 +35,7 @@ export default function LiveChatWidget() {
             <div
                 aria-hidden={!isOpen}
                 className={`
-                    fixed bottom-24 right-5 z-[100]
+                    fixed bottom-24 right-5 z-100
                     flex w-[min(380px,calc(100vw-2.5rem))]
                     h-[min(560px,calc(100dvh-8rem))]
                     flex-col overflow-hidden
@@ -297,7 +297,7 @@ export default function LiveChatWidget() {
                 aria-label={isOpen ? "Close live chat" : "Open live chat"}
                 aria-expanded={isOpen}
                 className="
-                    group fixed bottom-6 right-6 z-[110]
+                    group fixed bottom-6 right-6 z-110
                     flex h-12 w-12
                     items-center justify-center
                     rounded-[21px_21px_5px_21px]

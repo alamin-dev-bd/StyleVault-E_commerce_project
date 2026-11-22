@@ -74,7 +74,7 @@ export default function MobileMenu({ mobileOpen, onClose, onSearch }) {
       {/* Background Overlay */}
       <div
         onClick={onClose}
-        className={`fixed inset-0 z-[90] bg-black/60 backdrop-blur-[2px] transition-opacity duration-300 ${mobileOpen
+        className={`fixed inset-0 z-90 bg-black/60 backdrop-blur-[2px] transition-opacity duration-300 ${mobileOpen
             ? "visible opacity-100"
             : "invisible pointer-events-none opacity-0"
           }`}
@@ -83,7 +83,7 @@ export default function MobileMenu({ mobileOpen, onClose, onSearch }) {
 
       {/* Sidebar */}
       <aside
-        className={`fixed left-0 top-0 z-[100] flex h-dvh w-[85%] max-w-[380px] flex-col border-r border-(--border) bg-(--bg) shadow-2xl transition-transform duration-300 ease-in-out ${mobileOpen ? "translate-x-0" : "-translate-x-full"
+        className={`fixed left-0 top-0 z-100 flex h-dvh w-[85%] max-w-95 flex-col border-r border-(--border) bg-(--bg) shadow-2xl transition-transform duration-300 ease-in-out ${mobileOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         aria-label="Main navigation"
         aria-hidden={!mobileOpen}

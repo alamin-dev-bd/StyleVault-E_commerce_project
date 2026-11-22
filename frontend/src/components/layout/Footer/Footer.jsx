@@ -10,7 +10,7 @@ import {
   RotateCcw,
   Heart,
 } from "lucide-react";
-import { logo,PaymentPartner } from "@/assets/Images/image";
+import { logo, PaymentPartner } from "@/assets/Images/image";
 
 const footerLinks = {
   shop: [
@@ -95,9 +95,7 @@ export default function Footer() {
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
 
-        {/* =========================
-            MAIN FOOTER
-        ========================== */}
+        {/* MAIN FOOTER */}
 
         <div className="grid grid-cols-1 gap-12 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10 lg:py-16">
 
@@ -207,41 +205,37 @@ export default function Footer() {
 
         </div>
 
-        {/* =========================
-            Payment Partners
-        ========================== */}
+        {/* Payment Partners */}
 
-<div
-    className="
+        <div
+          className="
         grid grid-cols-1 gap-5
         border-y border-(--border)
         py-7
         sm:grid-cols-3
     "
->
-    <img
-        src={PaymentPartner.PaymentPartnerImg}
-        alt="Payment Partners"
-        className="
+        >
+          <img
+            src={PaymentPartner.PaymentPartnerImg}
+            alt="Payment Partners"
+            className="
             col-span-full
             hidden md:block w-full h-auto
             object-contain object-left
         "
-    />
-        <img
-        src={PaymentPartner.PaymentPartnermobile}
-        alt="Payment Partners"
-        className="
+          />
+          <img
+            src={PaymentPartner.PaymentPartnermobile}
+            alt="Payment Partners"
+            className="
             col-span-full
             block md:hidden w-full h-auto
             object-contain object-left
         "
-    />
-</div>
+          />
+        </div>
 
-        {/* =========================
-            COPYRIGHT
-        ========================== */}
+        {/* COPYRIGHT */}
 
         <div className="
           flex flex-col items-center justify-between
