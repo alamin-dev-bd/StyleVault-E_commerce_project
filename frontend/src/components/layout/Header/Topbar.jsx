@@ -1,5 +1,6 @@
 import { Phone, Mail, Moon } from "lucide-react";
 import ThemeToggle from "@/components/common/ThemeToggle";
+import { Link } from "react-router-dom";
 
 export default function Topbar() {
   return (
@@ -27,7 +28,7 @@ export default function Topbar() {
         {/* Right - Social + Theme */}
         <div className="flex items-center gap-2.5 sm:gap-5 shrink-0">
           <div className="flex items-center gap-2 sm:gap-3">
-            <span className="hidden md:inline text-white/80">Follow us</span>
+            <Link to="/contact" ><span className="hidden md:inline text-white/80 hover:text-(--accent)">Contact us</span></Link>
 
             <a href="#" className="hover:text-(--accent) transition" aria-label="Facebook">
               <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current" viewBox="0 0 24 24">

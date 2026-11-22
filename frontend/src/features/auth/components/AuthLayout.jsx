@@ -25,14 +25,14 @@ export default function AuthLayout({
         <Link to="/" aria-label="StyleVault home" className="auth-logo">
           {/* Light mode logo */}
           <img
-            src={logo.darklogoSvg}
+            src={logo.logodarkSvg}
             alt="StyleVault"
             className="logo-light h-12 sm:h-14 w-auto object-contain"
           />
 
           {/* Dark mode logo */}
           <img
-            src={logo.logoSvg}
+            src={logo.logolightSvg}
             alt=""
             aria-hidden="true"
             className="logo-dark h-12 sm:h-14 w-auto object-contain"

@@ -6,12 +6,12 @@ export default function Hero() {
   return (
     <>
       {/* Desktop Hero: 768px and above */}
-      <div className="hidden md:block">
+      <div className="hidden sm:block">
         <DesktopHero />
       </div>
 
       {/* Mobile Hero: Below 768px */}
-      <div className="block md:hidden">
+      <div className="block sm:hidden">
         <MobileHero />
       </div>
     </>

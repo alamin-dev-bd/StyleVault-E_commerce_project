@@ -13,11 +13,12 @@ export const router = createBrowserRouter([
   {
     element: <MainLayout />,children: [
       { path: "/",element: <HomePage />, },
-      { path: "*",element: <NotFoundPage />, },
+      
     ],
   },
 
   // Authentication pages (without the main header/footer)
   { path: "/login",element: <Login />, },
   { path: "/signup",element: <Signup />, },
+  { path: "*",element: <NotFoundPage />, },
 ]);

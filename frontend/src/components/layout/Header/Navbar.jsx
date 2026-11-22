@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* Center: Logo */}
         <Link to="/" className="justify-self-center">
           <img
-            src={logo.logoSvg}
+            src={logo.logolightSvg}
             alt="StyleVault"
             className="h-12 w-auto object-contain sm:h-16"
           />

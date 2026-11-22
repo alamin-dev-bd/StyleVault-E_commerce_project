@@ -104,7 +104,7 @@ export default function MobileMenu({ mobileOpen, onClose, onSearch }) {
             type="button"
             onClick={onClose}
             aria-label="Close menu"
-            className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-(--border) text-(--text-2) transition hover:border-(--accent) hover:bg-(--accent-soft) hover:text-(--primary)"
+            className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-(--border) text-(--text-2) transition hover:border-(--accent) hover:bg-(--accent-soft) hover:text-(--accent)"
           >
             <X size={19} />
           </button>

@@ -37,7 +37,7 @@ export default function NotFoundPage() {
 
           <button
             onClick={() => window.history.back()}
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-(--surface-2) hover:bg-(--muted)/20 text-(--text) font-medium px-6 py-3.5 rounded-full transition-all duration-300 border border-(--border)"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-(--surface-2) hover:bg-(--muted)/20 text-(--text) font-medium px-6 py-3.5 rounded-full transition-all duration-300 border border-(--border) cursor-pointer"
           >
             <ArrowLeft size={18} />
             Go Back

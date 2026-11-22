@@ -37,6 +37,9 @@
 
   /* Links */
   --link: #007AFF;
+
+  --chat-bg:#F7F3ED;
+  --chat-text:#F48721;
 }
 
 
@@ -76,6 +79,9 @@
 
   /* Links */
   --link: #60A5FA;
+
+  --chat-bg:#F48721;
+  --chat-text:#F7F3ED;
 }
 
 
@@ -101,7 +107,7 @@
 
   /* Backgrounds */
   --bg-black: #000000;
-  --bg-white: #FFFFFF;
+  --border-white: #E5DDD3;
   --bg-black2: #211D19;
   --bg2: #151311;
 
@@ -114,6 +120,8 @@
 
   /* Borders */
   --borderp: #3B332D;
+
+  --chat:#F48721;
 }
 
 

@@ -7,7 +7,8 @@ import hanger from "@/assets/Images/hero/hanger.WebP"
 
 //Logo Navbar
 import logoSvg from "@/assets/Images/logo/logo.svg"
-import darklogoSvg from "@/assets/Images/logo/darklogo.Svg"
+import logolightSvg from "@/assets/Images/logo/logolight.svg"
+import logodarkSvg from "@/assets/Images/logo/logodark.Svg"
 
 // Category
 import Men from "@/assets/Images/categories/men.WebP"
@@ -17,6 +18,10 @@ import Womenwinter from "@/assets/Images/categories/womenwinter.WebP"
 import Accessories from "@/assets/Images/categories/accesories.Webp"
 import Shoe from "@/assets/Images/categories/shoe.Webp"
 import Mensummer from "@/assets/Images/categories/mensummer.Webp"
+
+//Footer
+import PaymentPartnerImg from "@/assets/Images/footer/payment-gateway.Webp"
+import PaymentPartnermobile from "@/assets/Images/footer/pay.Webp"
 
 
 //Hero
@@ -30,7 +35,7 @@ export const HeroImages = {
 }
 
 //Logo Navbar
-export const logo = { logoSvg,darklogoSvg }
+export const logo = { logoSvg,logolightSvg,logodarkSvg }
 
 // Category
 export const categoryImg = {
@@ -42,3 +47,6 @@ export const categoryImg = {
     Shoe,
     Mensummer,
 }
+
+//Footer
+export const PaymentPartner = { PaymentPartnerImg,PaymentPartnermobile }
