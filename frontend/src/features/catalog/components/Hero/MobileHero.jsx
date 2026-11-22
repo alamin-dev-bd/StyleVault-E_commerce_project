@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import BrandBanner from "@/components/layout/BrandBanner";
 import {
   ArrowRight,
   Sparkles,
@@ -32,6 +33,7 @@ export default function MobileHero() {
   }, []);
 
   return (
+    <>
     <section className="relative overflow-hidden bg-(--bg) px-4 pb-6 pt-5">
 
       {/* Subtle Background Decoration */}
@@ -170,7 +172,12 @@ export default function MobileHero() {
           <span>Thoughtfully selected. Made for your style.</span>
         </div>
 
+              
+              
       </div>
+      
     </section>
+    <BrandBanner />
+    </>
   );
 }

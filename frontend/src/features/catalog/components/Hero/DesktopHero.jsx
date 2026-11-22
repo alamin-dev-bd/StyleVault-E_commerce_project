@@ -7,6 +7,7 @@ import {
     Headphones,
 } from "lucide-react";
 import { HeroImages } from "@/assets/Images/image";
+import BrandBanner from "@/components/layout/BrandBanner";
 
 export default function DesktopHero() {
     const [activeProduct, setActiveProduct] = useState(null);
@@ -96,7 +97,7 @@ export default function DesktopHero() {
 
     return (
         <>
-            <section className="relative isolate flex h-[82vh] min-h-155 max-h-220 items-start overflow-hidden">
+            <section className="relative isolate flex h-[80vh] min-h-145 max-h-205 items-start overflow-hidden">
 
                 {/* BACKGROUND IMAGE */}
 
@@ -291,7 +292,7 @@ export default function DesktopHero() {
             BOTTOM MARQUEE
         ====================================== */}
 
-                <div className="pointer-events-none absolute bottom-4 left-0 right-0 z-40">
+                <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-40">
 
                     <div className="relative overflow-hidden border-t border-(--accent-h) bg-(--accent) py-3">
 
@@ -332,6 +333,7 @@ export default function DesktopHero() {
 
             </section>
 
+            <BrandBanner />
 
             {/* =====================================
     FLOATING PRODUCT PREVIEW CARD

@@ -70,7 +70,7 @@ export default function SearchBar({ isOpen, onClose, onSearch }) {
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Search for Panjabi, Hijab, Perfume, Shoes..."
-                className="w-full rounded-full border border-(--borderp) bg-(--bg2)/20 py-3.5 pl-12 pr-28 text-sm text-(--text2) outline-none transition placeholder:text-(--muted) focus:border-(--primaryp) focus:ring-2 focus:ring-(--primaryp-soft)"
+                className="w-full rounded-full border border-(--borderp) bg-(--bg2)/20 py-3.5 pl-12 pr-28 text-sm text-(--text-white) outline-none transition placeholder:text-(--muted) focus:border-(--primaryp) focus:ring-2 focus:ring-(--primaryp-soft)"
                 tabIndex={isOpen ? 0 : -1}
               />
 
@@ -82,7 +82,7 @@ export default function SearchBar({ isOpen, onClose, onSearch }) {
                       setQuery("");
                       inputRef.current?.focus();
                     }}
-                    className="flex h-8 w-8 items-center justify-center rounded-full text-(--muted) transition hover:bg-(--surface-2) hover:text-(--accent) cursor-pointer "
+                    className="flex h-8 w-8 items-center justify-center rounded-full text-(--muted) transition hover:bg-(--accent-h) hover:text-(--text-white) cursor-pointer "
                     aria-label="Clear search"
                   >
                     <X size={16} />
@@ -92,7 +92,7 @@ export default function SearchBar({ isOpen, onClose, onSearch }) {
                 <button
                   type="submit"
                   disabled={!query.trim()}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-(--primary) text-white transition hover:bg-(--accent-h) cursor-pointer disabled:cursor-not-allowed disabled:opacity-40"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-(--accent) text-white transition hover:bg-(--accent-h) cursor-pointer disabled:cursor-not-allowed disabled:opacity-40"
                   aria-label="Search"
                 >
                   <ArrowRight size={16} strokeWidth={2.5} />
@@ -111,7 +111,7 @@ export default function SearchBar({ isOpen, onClose, onSearch }) {
                 key={item}
                 type="button"
                 onClick={() => handlePopular(item)}
-                className="rounded-full border border-(--borderp) bg-(--bg2)/30 px-3 py-1 text-xs text-(--textp-2) transition hover:border-(--primary) hover:bg-(--primary-soft) hover:text-(--primary)"
+                className="rounded-full border border-(--borderp) bg-(--bg2)/30 px-3 py-1 text-xs text-(--textp-2) transition hover:border-(--primary) hover:bg-(--accent-h) hover:text-(--text-white) cursor-pointer"
               >
                 {item}
               </button>
